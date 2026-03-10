@@ -1,66 +1,26 @@
-## Foundry
+# Smart Contract Security Audits
+by Mulpur Sandeep | CSE Student | Web3 Security Researcher
+Currently pursuing: CompTIA CySA+ | PenTest+
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Exploit Research
 
-Foundry consists of:
+### 001 - Reentrancy Attack
+- **Vulnerability:** State variable updated after external call
+- **Impact:** Complete contract drainage
+- **Proof of Concept:** Attacker deposits 1 ETH, drains 4 ETH from victims
+- **Files:** `src/VulnerableBank.sol` `test/ReentrancyExploit.t.sol`
+- **Result:** Bank balance = 0, Attacker balance = 5 ETH
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
+## Tools
+- Slither (static analysis)
+- Foundry (exploit development)
+- Solc-select (compiler management)
 ```
 
-### Test
+Click **Commit changes**.
 
-```shell
-$ forge test
+**2. Add a description**
+
+Click the gear icon ⚙️ next to "About" on the right side → add:
 ```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Smart contract vulnerability research and security audit reports | Web3 Security

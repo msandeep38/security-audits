@@ -15,12 +15,4 @@ Currently pursuing: CompTIA CySA+ | PenTest+
 - Slither (static analysis)
 - Foundry (exploit development)
 - Solc-select (compiler management)
-```
-
-Click **Commit changes**.
-
-**2. Add a description**
-
-Click the gear icon ⚙️ next to "About" on the right side → add:
-```
 Smart contract vulnerability research and security audit reports | Web3 Security

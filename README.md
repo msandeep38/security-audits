@@ -14,6 +14,10 @@ Currently pursuing: CompTIA CySA+ | PenTest+
 - **Vulnerability:** Unchecked arithmetic allows lock time to wrap to zero
 -**Impact:** Attacker bypasses timelock and withdraws funds instantly
 -**Result:** 1 ETH withdrawn before 1 week lock expired
+ ### 003 - Access Control Vulnerability
+- **Vulnerability:** initOwner() callable by anyone, no access restriction
+- **Impact:** Attacker hijacks contract ownership and drains all funds
+- **Result:** 5 ETH stolen, vault completely emptied 
 
 ## Tools
 - Slither (static analysis)
